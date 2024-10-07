@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Master</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+		body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQQG1FcPgt10oE-NmbJiArhizOA1fM-8uc4FRsb1pCZBoXkgZvdPjcd89bHaePzOm4y3tutn8zP1w5qXT4LHduW4eKHuzlGGgXiC3KBWXp7UjZ5UYC3cseoXTNx024GyT4x525WM4oR-y6owGcRCjwpPq.jpg?r=ebd");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-attachment: fixed; /* Keep background fixed for larger screens */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: left; /* Align text and button to the left */
+    padding: 20px;
+    max-width: 90%; /* Keep it responsive */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Button styling */
+button {
+    padding: 15px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #e2ff63, #2bff44);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 250%; /* Space above the button */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-self:baseline; /* Button stays aligned to the left */
+}
+
+button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+    color: #fff;
+}
+
+footer a {
+    color: #f2d54f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    body {
+        background-position: center; /* Center background on medium screens */
+        background-size: cover; /* Keep it covering */
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        background-position: top center; /* Position background to top center */
+        background-size: cover; /* Keep it covering */
+    }
+
+    button {
+        font-size: 1.3em; /* Slightly smaller button on medium screens */
+        padding: 12px 35px; /* Adjust padding */
+        margin-top: 40px; /* Adjust margin */
+    }
+}
+
+/* New background image for small devices */
+@media (max-width: 600px) {
+    body {
+        background-image: url("https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.ludo.king.jpg"); /* Add your small device background image here */
+        background-position: inherit; /* Position background to top */
+        background-size: cover; /* Show entire background image */
+        background-attachment: scroll; /* Allow scrolling for small screens */
+    }
+
+    .container {
+        padding: 10px; /* Less padding on small screens */
+        width: 100%; /* Full width for container */
+    }
+
+    button {
+        font-size: 1.2em; /* Smaller button font */
+        padding: 10px 30px; /* Adjust padding */
+        width: 100%; /* Full width button */
+        margin-top: 20px; /* Less margin */
+    }
+
+    footer p {
+        font-size: 0.9em; /* Smaller footer text */
+    }
+}
+
+/* Hide the larger background image for very small devices */
+@media (max-width: 400px) {
+    body {
+        background-image: url("https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.ludo.king.jpg"); /* Add your small device background image here */
+        background-position: top; /* Ensure background aligns at the top */
+        background-size: cover; /* Show entire background image */
+        background-attachment: scroll; /* Allow scrolling */
+    }
+
+    button {
+        font-size: 1em; /* Smaller button font */
+        padding: 8px 20px; /* Adjust padding */
+        width: 100%; /* Full width button */
+    }
+
+    footer p {
+        font-size: 0.8em; /* Smaller footer text */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="ludo.html"><button id="btn">Start Game</button></a>
+    </div>
+    
+    <footer>
+        <p>"Play the classic Ludo game with your friends!" | <a href="index1.html">Terms and Conditions</a></p>
+    </footer>
+</body>
+</html>
